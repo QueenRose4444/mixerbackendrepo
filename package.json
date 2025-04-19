@@ -1,17 +1,15 @@
 {
-  "name": "schedule1-mixer-backend-unified",
-  "version": "1.0.0",
-  "description": "Unified backend server for Schedule1 Mixer calculations using official package",
-  "main": "mixer_backend_unified.js",
-  "scripts": {
-    "start": "node mixer_backend_unified.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Rose",
-  "license": "ISC",
-  "dependencies": {
-    "@schedule1-tools/mixer": "^0.2.2",
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "name": "schedule1-mixer-backend",
+    "version": "1.0.0",
+    "description": "Backend server for Schedule1 Mixer calculations",
+    "main": "mixer_backend.js",
+    "scripts": {
+      "start": "node mixer_backend.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Rose",
+    "license": "ISC",
+    "dependencies": {
+      "@schedule1-tools/mixer": "^0.2.2"
+    }
   }
-}
