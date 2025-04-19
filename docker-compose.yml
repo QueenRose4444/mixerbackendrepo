@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mixer-backend:
+    # Build the image using the Dockerfile in the current directory (.) of the cloned repo
+    build: .
+    container_name: schedule1-mixer-backend # Keep original name or change if needed
+    ports:
+      # Map host port 3000 to container port 3000
+      - "3000:3000"
+    environment:
+      # Port the app listens on inside the container
+      - PORT=3000
+    restart: unless-stopped
+    networks:
+      # Define or connect to a network
+      - mixer-network
+
+networks:
+  mixer-network:
+    driver: bridge
+
